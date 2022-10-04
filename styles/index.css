@@ -1,0 +1,21 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+@import './movies.css';
+@import './navbar.css';
+@import './details.css';
+
+body{
+    background-color: #fafafa;
+    min-height: calc(100vh - 52px);
+}
+
+.card img{
+    object-fit: cover;
+}
+
+.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 52px);
+}

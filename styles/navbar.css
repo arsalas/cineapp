@@ -1,0 +1,20 @@
+.navbar {
+    /* position: sticky;
+    top: 0px; */
+   
+}
+
+#app-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: #333;
+}
+
+.navbar a:hover {
+    color: #333;
+}
+
+.navbar .button {
+    font-weight: 800;
+}
