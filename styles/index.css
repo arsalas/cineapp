@@ -4,18 +4,64 @@
 @import './navbar.css';
 @import './details.css';
 
-body{
-    background-color: #fafafa;
-    min-height: calc(100vh - 52px);
+
+:root,
+:root.light {
+    --bg-primary: #fff;
+    --bg-secondary: #fafafa;
+    --text-primary: #111;
+    --text-secondary: #333;
 }
 
-.card img{
+
+:root.dark {
+    --bg-primary: #222;
+    --bg-secondary: #111;
+    --text-primary: #fff;
+    --text-secondary: #bbb;
+}
+
+body {
+    background-color: var(--bg-secondary);
+    min-height: calc(100vh - 52px);
+  
+    transition: 300ms;
+
+}
+
+.card img {
     object-fit: cover;
 }
 
-.not-found{
+.not-found {
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(100vh - 52px);
+}
+
+.title {
+    color: var(--text-primary);
+}
+
+a {
+    color: var(--text-primary);
+}
+
+a:hover {
+    color: var(--text-secondary);
+}
+
+#app{
+    margin-top: 52px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #222;
+        --bg-secondary: #111;
+        --text-primary: #fff;
+        --text-secondary: #bbb;
+    }
 }

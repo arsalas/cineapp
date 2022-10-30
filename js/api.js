@@ -1,7 +1,5 @@
-
-// export const IMG_URL = 'https://image.tmdb.org/t/p/w220_and_h330_face';
 export const IMG_URL = 'https://image.tmdb.org/t/p/w500';
-const apiKey = '02f8759072418de3732f85461524e6e9';
+const apiKey = '3c4b4a0cb658958a46e938cc9d8ade07';
 const lang = 'es'
 
 const api = async (endpoint, params) => {

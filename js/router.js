@@ -1,8 +1,8 @@
-import { loadDetails } from "./details.js";
-import { loadHome } from "./home.js";
-import { loadNowPlaying } from "./nowPlaying.js";
-import { loadPopulars } from "./populars.js";
-import { loadSearch } from "./search.js";
+import { loadDetails } from "./controllers/details.js";
+import { loadHome } from "./controllers/home.js";
+import { loadNowPlaying } from "./controllers/nowPlaying.js";
+import { loadPopulars } from "./controllers/populars.js";
+import { loadSearch } from "./controllers/search.js";
 
 const loadPage = async (file) => {
     const html = await fetch(file).then(res => res.text());

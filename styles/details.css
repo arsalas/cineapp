@@ -1,6 +1,4 @@
-
-
-#backdrop{
+#backdrop {
     height: 20rem;
     background-size: cover;
     background-position: center;
@@ -9,11 +7,24 @@
     color: #eee;
 }
 
-#backdrop .title{
+#backdrop .title {
     color: #fff;
     margin: 0px;
 }
 
-#rate{
+#rate {
     font-weight: 500;
+}
+
+.movie-details {
+    color: var(--text-primary) !important;
+}
+
+.tagline{
+    color: var(--text-secondary);
+}
+
+.tag.is-dark {
+    background-color: var(--text-primary) !important;
+    color: var(--bg-primary) !important;
 }

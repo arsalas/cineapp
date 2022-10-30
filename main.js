@@ -18,4 +18,30 @@ btn.addEventListener('click', () => {
 
 })
 
+
+const setTheme = (theme) => {
+    document.documentElement.className = theme;
+    localStorage.setItem('theme', theme);
+    if (theme === 'dark') {
+        document.querySelector('#iconTheme').classList.remove('fa-sun');
+        document.querySelector('#iconTheme').classList.add('fa-moon');
+    } else {
+        document.querySelector('#iconTheme').classList.add('fa-sun');
+        document.querySelector('#iconTheme').classList.remove('fa-moon');
+
+    }
+
+}
+const getTheme = () => {
+    let theme = localStorage.getItem('theme');
+    if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    }
+    setTheme(theme);
+}
+document.querySelector('#iconTheme').addEventListener('click', () => {
+    if (localStorage.getItem('theme') === 'light') setTheme('dark')
+    else setTheme('light')
+})
+getTheme();
 router();

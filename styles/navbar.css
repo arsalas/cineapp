@@ -1,7 +1,39 @@
 .navbar {
-    /* position: sticky;
-    top: 0px; */
-   
+    -webkit-box-shadow: 2px 10px 67px -24px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 10px 67px -24px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 10px 67px -24px rgba(0, 0, 0, 0.75);
+    position: relative;
+}
+
+.navbar-menu,
+.navbar {
+    background-color: var(--bg-primary);
+
+}
+
+.navbar-item,
+#app-title {
+    color: var(--text-primary) !important;
+
+}
+
+a.navbar-item:hover,
+a.navbar-item:focus {
+    background-color: var(--bg-secondary);
+}
+
+.input {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border-color: var(--bg-primary);
+}
+
+.input::placeholder {
+    color: var(--text-secondary);
+}
+
+.control.has-icons-right .input:focus~.icon {
+    color: var(--text-primary);
 }
 
 #app-title {
@@ -11,10 +43,31 @@
     color: #333;
 }
 
-.navbar a:hover {
+/* .navbar a:hover {
     color: #333;
-}
+} */
 
 .navbar .button {
     font-weight: 800;
+}
+
+
+.navbar-burger {
+    color: var(--text-primary);
+}
+
+.navbar-burger:hover {
+    color: var(--text-secondary);
+}
+
+
+.icon-theme {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.icon-theme :hover {
+    color: var(--text-secondary);
 }

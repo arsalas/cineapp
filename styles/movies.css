@@ -4,6 +4,7 @@
     transition: 300ms;
     cursor: pointer;
     position: relative;
+    background-color: var(--bg-primary);
 }
 
 .movie-card:hover {
