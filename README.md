@@ -3,7 +3,7 @@
 ## Description 
 A simple cine app with vanilla javascript and [themoviedb](https://developers.themoviedb.org/3/)
 
-## Imagenes
+## Images
 ![cineapp](https://raw.githubusercontent.com/arsalas/cineapp/main/images/screenshot_01.png)
 
 ![cineapp](https://raw.githubusercontent.com/arsalas/cineapp/main/images/screenshot_02.png)
